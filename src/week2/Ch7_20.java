@@ -6,6 +6,7 @@
 package week2;
 
 /**
+ * Sorts an array
  *
  * @author jten10
  */

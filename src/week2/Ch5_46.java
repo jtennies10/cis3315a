@@ -8,6 +8,7 @@ package week2;
 import java.util.Scanner;
 
 /**
+ * Prints a string backwards.
  *
  * @author jten10
  */

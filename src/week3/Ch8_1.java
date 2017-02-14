@@ -6,6 +6,7 @@
 package week3;
 
 /**
+ * Sums the elements of a specified column in a two dimensional array.
  *
  * @author jten10
  */

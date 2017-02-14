@@ -8,6 +8,7 @@ package week2;
 import java.util.Scanner;
 
 /**
+ * Formats a number with specified width.
  *
  * @author jten10
  */

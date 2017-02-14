@@ -8,6 +8,7 @@ package week2;
 import java.util.Scanner;
 
 /**
+ * Creates an ISBN 13.
  *
  * @author jten10
  */

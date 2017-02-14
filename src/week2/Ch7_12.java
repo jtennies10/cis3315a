@@ -2,6 +2,7 @@
 package week2;
 
 /**
+ * Reverses an array.
  *
  * @author jten10
  */

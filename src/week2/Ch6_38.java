@@ -6,6 +6,7 @@
 package week2;
 
 /**
+ * Basic program using Math.random().
  *
  * @author jten10
  */

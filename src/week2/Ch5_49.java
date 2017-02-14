@@ -8,6 +8,7 @@ package week2;
 import java.util.Scanner;
 
 /**
+ * Counts vowels and consonants in a given string.
  *
  * @author jten10
  */

@@ -1,7 +1,7 @@
 package week3;
 
 /**
- * Example of a ragged array
+ * Example of a ragged array.
  *
  * @author jten10
  */
