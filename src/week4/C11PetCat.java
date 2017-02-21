@@ -15,4 +15,9 @@ public class C11PetCat extends C11Pet {
         return "meow";
     }
     
+    @Override
+    public String toString() {
+        return "I, " + getPetName() + ", am a cat";
+    }
+    
 }
