@@ -11,13 +11,13 @@ import java.util.Scanner;
 public class C11N4MaxElement {
     public static Integer max(ArrayList<Integer> list) {
         if(list.isEmpty()) return null;
-        int maxIndex = 0;
-        for(int i = 0; i < list.size(); i++) {
+        int maxIndex = list.get(0);
+        for(int i = 1; i < list.size(); i++) {
             if(maxIndex < list.get(i)) {
-                maxIndex = i;
+                maxIndex = list.get(i);
             }
         }
-        return list.get(maxIndex);
+        return maxIndex;
     }
     
     public static void main(String[] args) {
@@ -27,10 +27,8 @@ public class C11N4MaxElement {
         ArrayList<Integer> list = new ArrayList();
         for(int i = 0; i < nums.length(); i++) {
             int c = Character.getNumericValue(nums.charAt(i));
-            Integer n = new Integer(c);
-            list.add(n);
+            list.add(c);
         }
         System.out.println("The max number is " + max(list));
-        
     }
 }
