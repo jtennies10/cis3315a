@@ -21,16 +21,9 @@ public class C11N12Sum {
         Scanner sc = new Scanner(System.in);
         ArrayList list = new ArrayList();
         System.out.print("Enter five numbers separated by spaces: ");
-        double one = sc.nextDouble();
-        list.add(one);
-        double two = sc.nextDouble();
-        list.add(two);
-        double three = sc.nextDouble();
-        list.add(three);
-        double four = sc.nextDouble();
-        list.add(four);
-        double five = sc.nextDouble();
-        list.add(five);
+        for(int i = 0; i < 5; i++) {
+            list.add(sc.nextDouble());
+        }
         System.out.println("The sum is: " + sum(list));
     }
 }
