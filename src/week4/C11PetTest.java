@@ -5,6 +5,10 @@
  */
 package week4;
 
+import week4.C11PetDog;
+import week4.C11PetCat;
+import week4.C11Pet;
+
 /**
  *
  * @author jten10
