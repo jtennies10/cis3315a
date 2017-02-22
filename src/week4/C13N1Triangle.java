@@ -5,6 +5,8 @@
  */
 package week4;
 
+import java.util.Scanner;
+
 /**
  *
  * @author jten10
@@ -92,5 +94,19 @@ abstract class GeometricObject {
 }
 
 class C13N1Test {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter three sides of a triangle, a color, and true or false "
+             + "for if the triangle is filled or not: ");
+        double side1 = sc.nextDouble();
+        double side2 = sc.nextDouble();
+        double side3 = sc.nextDouble();
+        String color = sc.next();
+        boolean filled = sc.nextBoolean();
+        C13N1Triangle t = new C13N1Triangle(side1, side2, side3, color, filled);
+        System.out.println(t);
+    }
     
+    
+            
 }
