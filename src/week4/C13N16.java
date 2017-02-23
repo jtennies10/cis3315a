@@ -17,7 +17,7 @@ public class C13N16 {
         int oneNumerator = Integer.parseInt(rational1[0]);
         int oneDenominator = Integer.parseInt(rational1[1]);
         int twoNumerator = Integer.parseInt(rational2[0]);
-        int twoDenominator = Integer.parseInt(rational2[0]);
+        int twoDenominator = Integer.parseInt(rational2[1]);
 
         switch (args[1].charAt(0)) {
             case '+':

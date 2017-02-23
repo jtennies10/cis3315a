@@ -62,6 +62,16 @@ public class C13N17 implements Cloneable {
     public double absoluteValue() {
         return Math.sqrt(a*a + b*b);
     }
+    
+    @Override
+    public Object clone() {
+        try {
+            return super.clone();
+        } catch(CloneNotSupportedException ex) {
+            System.out.println("Clone not supported.");
+            return null;
+        }
+    }
 
     @Override
     public String toString() {
