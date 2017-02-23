@@ -11,13 +11,13 @@ import java.util.Scanner;
  *
  * @author jten10
  */
-public class C13N1Triangle extends GeometricObject {
+public class C13N01Triangle extends GeometricObject {
 
     private double a;
     private double b;
     private double c;
 
-    public C13N1Triangle(double a, double b, double c, String color, boolean filled) {
+    public C13N01Triangle(double a, double b, double c, String color, boolean filled) {
         super(color, filled);
         this.a = a;
         this.b = b;
@@ -103,7 +103,7 @@ class C13N1Test {
         double side3 = sc.nextDouble();
         String color = sc.next();
         boolean filled = sc.nextBoolean();
-        C13N1Triangle t = new C13N1Triangle(side1, side2, side3, color, filled);
+        C13N01Triangle t = new C13N01Triangle(side1, side2, side3, color, filled);
         System.out.println(t);
     }
     
