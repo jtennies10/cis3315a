@@ -19,8 +19,7 @@ public class C12N08 {
         String hex = input.nextLine();
         
         try {
-        System.out.println("The decimal value for hex number " 
-                + hex + " is " + hexToDecimal(hex.toUpperCase()));
+        System.out.println("The decimal value is " + hexToDecimal(hex.toUpperCase()));
         } catch(HexFormatException ex) {
             ex.printStackTrace();
         }
@@ -38,7 +37,7 @@ public class C12N08 {
     
     public static int hexCharToDecimal(char ch) throws HexFormatException {
         if(ch >= 'A' && ch <= 'F') return 10 + ch - 'A';
-        else if (ch >= 0 && ch <= 9) return ch - 0;
+        else if (ch >= '0' && ch <= '9') return ch - '0';
         else {
             throw new HexFormatException();
         }
