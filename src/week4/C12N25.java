@@ -22,6 +22,8 @@ public class C12N25 {
         int numOfAssociates = 0;
         double totalFullSalary = 0;
         int numOfFull = 0;
+        double totalAllSalary = 0;
+        int numAll = 0;
 
         try {
             URL url = new URL(stringURL);
@@ -40,6 +42,8 @@ public class C12N25 {
                     totalFullSalary += Double.parseDouble(info[3]);
                     numOfFull++;
                 }
+                numAll++;
+                totalAllSalary += Double.parseDouble(info[3]);
 
             }
 
@@ -49,12 +53,14 @@ public class C12N25 {
             Logger.getLogger(C12N25.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        System.out.printf("Assistant Total Salary: %.2f Assistant Average Salary: %.2f\n", 
+        System.out.printf("Assistant Total Salary: %-15.2f Assistant Average Salary: %-20.2f\n", 
                 totalAssistantSalary, (totalAssistantSalary / numOfAssistants));
-        System.out.printf("Associate Total Salary: %.2f Associate Average Salary: %.2f\n",
+        System.out.printf("Associate Total Salary: %-15.2f Associate Average Salary: %-20.2f\n",
                 totalAssociateSalary, (totalAssociateSalary / numOfAssociates));
-        System.out.printf("Full Total Salary: %.2f Full Average Salary: %.2f\n",
+        System.out.printf("Full Total Salary:      %-15.2f Full Average Salary:      %-20.2f\n",
                 totalFullSalary, (totalFullSalary / numOfFull));
+        System.out.printf("All Total Salary:       %-15.2f All Average Salaray:      %-20.2f\n",
+               totalAllSalary, (totalAllSalary / numAll));
 
     }
 
